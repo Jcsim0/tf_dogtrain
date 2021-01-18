@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>dog recognition</title>
+    <link rel="stylesheet" , type="text/css" , href={% static 'css/Uploadimg.css' %} >
+</head>
+<body>
+<div class="title">欢迎使用狗脸图像识别系统</div>
+<form method="post" action='upload' enctype="multipart/form-data" class="picture_form">
+    <input type="file" name="img">
+    <button type="submit" class="load_button">上传</button>
+</form>
+<div style="margin-top: 20px;text-align: center">
+    <table>
+        <tr>
+            <a class="declare">判断上传照片的种类</a>
+        </tr>
+    </table>
+</div>
+<div style="margin-top: 50px">
+    <table>
+        <tr>
+            <img style="margin-left: 350px;height: 350px;" src="/static/img/l_dog.jpg">
+            <img style="margin-left: 150px;height: 350px;" src="/static/img/r_dog.jpg">
+        </tr>
+    </table>
+</div>
+</body>
+</html>

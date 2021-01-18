@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <link rel="stylesheet", type="text/css", href={% static 'css/Result.css' %}>
+</head>
+<body style="text-align: center">
+<div>
+    <img class="img" src=" /static/predic_Img/{{ img }}">
+    <h1>predict result is: </h1>
+    <h2>{{ data }}</h2>
+    <h1>概率为：</h1>
+    <h2>{{ probability }}</h2>
+</div>
+<div class="result">
+    <a href="http://127.0.0.1:8000/index">返回预测</a>
+</div>
+</body>
+</html>
